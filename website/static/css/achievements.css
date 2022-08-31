@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   padding: 0;
@@ -6,16 +6,16 @@
   box-sizing: border-box;
 }
 
-.main-body{
-  background-color:var(--purple1);
-  width:100%;
+.main-body {
+  background-color: var(--purple1);
+  width: 100%;
   padding: 10rem 0;
   min-height: calc(100vh - 120px);
   display: flex;
 }
 
-.achievements-listing{
-  width:67%;
+.achievements-listing {
+  width: 67%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--white);
@@ -25,41 +25,41 @@
 }
 
 /* specific styling  */
-h3{
+h3 {
   padding: 0.4rem 0.3rem;
-  color:var(--crayola-blue);
+  color: var(--crayola-blue);
 }
 
-p{
-  font-family: 'Lato', sans-serif;
+p {
+  font-family: "Lato", sans-serif;
   font-size: 17px;
 }
 
-.achievements{
+.achievements {
   margin-top: 1.5rem;
 }
 
-.emphasised-heading{
+.emphasised-heading {
   font-size: 18px;
 }
 
 /* icon styling */
-.kathak-dance{
-  width:20px;
-  height:20px;
+.kathak-dance {
+  width: 20px;
+  height: 20px;
 }
 
 /* styling content for different media-sizes */
 @media (max-width: 480px) {
-  .achievements-listing{
-    width:90%;
-    padding:1rem 1rem;
+  .achievements-listing {
+    width: 90%;
+    padding: 1rem 1rem;
   }
 }
 
-@media (min-height: 1100px){
-  .achievements-listing{
-    width:90%;
+@media (min-height: 1100px) {
+  .achievements-listing {
+    width: 90%;
     justify-content: center;
   }
 }
