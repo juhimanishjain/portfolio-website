@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% load static%}
+
+<!-- Loading CSS files -->
+{% block static_files%}
+  <link rel="stylesheet" href="{% static "css/experiences.css" %}"/>
+{% endblock %}
+
+{% block content%}
+  {% include "website/includes/navigation_bar.html"%}
+  <div class="main-content-experiences">
+  <div class="content-experiences">
+    {% for experience in experiences %}
+    <div class="experience-listing">
+      <!--change alternate text description-->
+      {% if experience.title == "FreshCICS"%}
+      <a href="https://sites.google.com/umass.edu/freshcics/about/about" target="_blank"><img src={{ experience.image.url }} alt="to-be-changed" class="FreshCICS-image"/></a>
+       <strong><p class="FreshCICS-title">FreshCICS</p></strong>
+        <div class="FreshCICS-position-title">
+          <i><p class="FreshCICS-position-timeline">{{experience.position}}</p></i>
+          <i><p class="FreshCICS-position-timeline">{{experience.timeline}}</p></i>
+        </div>
+        <p class="FreshCICS-description"><a href="https://sites.google.com/umass.edu/freshcics" class="FreshCICS-highlight-link" target="_blank">FreshCICS</a> is a social group that aims to connect CICS first-year students. With FreshCICS, I have hosted events such as the <a href="https://sites.google.com/umass.edu/freshcics/events#h.rsgu6915f66y" class="FreshCICS-highlight-link" target="_blank">Clubs Meet & Greet</a> and <a href="https://sites.google.com/umass.edu/freshcics/events#h.o1h849vxzohf" class="FreshCICS-highlight-link" target="_blank">CICS Social</a> to make the CICS community more welcoming, inclusive, and supportive</p>
+      {% else %}
+      <a href="https://www.umass.edu/ials/" target="_blank"><img src={{ experience.image.url }} alt="IALS image" class="IALS-image"/></a>
+       <strong><p class="IALS-title">Institute for Applied Life Sciences (IALS)</p></strong>
+        <div class="IALS-position-title">
+          <i><p class="IALS-position-timeline">{{experience.position}}</p></i>
+          <i><p class="IALS-position-timeline">{{experience.timeline}}</p></i>
+        </div>
+        <p class="IALS-description">As a SWE Intern at <a href="https://www.umass.edu/ials/" target="_blank" class="IALS-highlight-link">IALS's</a> Core Facility <a href="https://www.umass.edu/ials/mhealthlab" target="_blank" class="IALS-highlight-link">mHealthLab</a>, I have constructed survey instruments w/ REDCap for Harvard Medical School's dashboard, integrated and prevented data loss by 60%, and automated the notification receiving process, reducing manual work by 30 times.</p>
+        {% endif %}
+      <!--Use if-else block to segregate normal/github link-->
+    </div>
+    {% endfor %}
+  </div>
+  <div class="experience-listing-1">
+    <div class="additional-experiences-listing">
+      <a href="https://www.umass.edu/living/gi/rha" target="_blank"><img src="{% static "images/RHA-Image.png" %}" alt="RHA Image on Screen" class="RHA-image"/></a>
+      <strong><p class="RHA-title">Residential Hall Association (RHA)</p></strong>
+      <div class="RHA-position-title">
+        <i><p class="RHA-position-timeline">Vice President</p></i>
+        <i><p class="RHA-position-timeline">(May 2022 - Present)</p></i>
+      </div>
+      <p class="RHA-description">RHA represents the residents of UMass Amherst. With my leadership, <a href="https://www.umass.edu/living/gi/rha" class="RHA-highlight-link" target="_blank">RHA</a> endeavors to give residents the best experience possible by diversifying cultural, social, and educational programming, addressing the resentments, and supporting all the residents of UMass Amherst.</p>
+    </div>
+  </div>
+</div>
+  <div class="footer-in-the-end">{% include "website/includes/footer.html" %}</div>
+{% endblock %}
