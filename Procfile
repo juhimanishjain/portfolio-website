@@ -1,1 +1,1 @@
-web: gunicorn personal_portfolio_website --log-file -
+web: gunicorn personal_portfolio_website.wsgi:application --log-file - --log-level debug
