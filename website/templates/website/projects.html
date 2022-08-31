@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+{% load static%}
+
+<!-- Loading CSS files -->
+{% block static_files%}
+  <link rel="stylesheet" href="{% static "css/projects.css" %}"/>
+{% endblock %}
+
+{% block content%}
+  {% include "website/includes/navigation_bar.html"%}
+  <div class="main-content-experiences">
+    <div class="section-1">
+      <div class="project-listing">
+        <img alt="Heart Prediction Model" src="{% static "images/Projects/Heart-Attack-Prediction-Model.png" %}" class="heart-prediction-model"/>
+        <h3 class="project-heading" id="heart-attack-pred-heading">Machine Learning for Heart Attack Prediction</h3>
+         <div class="professional-skills-in-a-border-box" id="heart-attack-pred-skills">
+          <img src={% static "images/icons/machine-learning.png"%} class="icon">
+          <img src={% static "images/icons/html-5.png"%} class="icon">
+          <img src={% static "images/icons/css-3.png"%} class="icon">
+          <img src={% static "images/icons/flask.png"%} class="icon" id="flask">
+          <img src={% static "images/icons/python.png"%} class="icon" id="python">
+         </div>
+        <p class="description"> Open-source ML web application that predicts the possibility of a heart attack with an accuracy of 86%.</p>
+        <div class="btn" id="heart-attack-pred-links-button">
+          <a href="https://predicting-heart-attack.herokuapp.com/" target="_blank"><button class="button">View Live</button></a>
+          <a href="https://github.com/juhimanishjain/ml-for-heart-attack-prediction" target="_blank"><button class="button">View on Github</button></a>
+        </div>
+      </div>
+      <div class="project-listing">
+        <img alt="ThinkMe Android Application" src="{% static "images/Projects/Thinkme-Android-Application.png" %}" class="thinkme-android-application">
+        <h3 class="project-heading" id="thinkme-app-heading">ThinkMe Application</h3>
+        <div class="professional-skills-in-a-border-box" id="thinkme-app-skills">
+          <img src={% static "images/icons/machine-learning.png"%} class="icon">
+          <img src={% static "images/icons/android.png"%} class="icon">
+          <img src={% static "images/icons/java.png"%} class="icon">
+          <img src={% static "images/icons/xml.png"%} class="icon">
+         </div>
+        <p class="description">ThinkMe Android Application contains a series of guided meditation tools, positive affirmative quotes, and an AI mind game with progressive difficulty levels to assist in achieving a more confident and happier life.</p>
+        <div class="btn">
+          <a href="https://play.google.com/store/apps/details?id=com.universevirtualhug" target="_blank"><button class="button">View on Play Store</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="project-listing">
+        <img alt="Games of Throne Project" src="{% static "images/Projects/Neo4j-Cypher-Project.png"%}" class="neo4j-cypher-project">
+        <h3 class="project-heading" id="project-got">Project GOT</h3>
+         <div class="professional-skills-in-a-border-box" id="project-got-skills">
+          <img src={% static "images/icons/neo4j.png"%} class="icon">
+          <img src={% static "images/icons/flask.png"%} class="icon" id="flask"> 
+          <img src={% static "images/icons/python.png"%} class="icon">
+          <img src={% static "images/icons/postman.png"%} class="icon">
+         </div>
+        <p class="description">Programmed RESTful API endpoints using py2neo to execute raw cypher queries and object-graph mapper (OGM) on neo4j database to query a Game of Thrones graph.</p>
+        <div class="btn">
+          <a href="https://github.com/juhimanishjain/project-GOT" target="_blank"><button class="button" id="project-got-button">View on Github</button></a>
+        </div>
+      </div>
+      <div class="project-listing">
+        <img alt="Medical Store Management System" src="{% static "images/Projects/medical-store-management.png" %}" class="personal-portfolio-website"/>
+        <h3 class="project-heading" id="portfolio-website-heading">Medical Store Management System</h3>
+        <div class="professional-skills-in-a-border-box" id="portfolio-website-skills">
+          <img src={% static "images/icons/python.png"%} class="icon" id="python">
+          <img src={% static "images/icons/mysql-icon.png"%} class="icon" id="mysql">
+          <img src={% static "images/icons/python_mysql.png"%} class="icon" id="python-mysql">
+       </div>
+      <p class="description">Medical store administrative system (developed w/ Python/MySQL connector) to trade medical equipment and supplies. Semi-finalist at a zonal coding competition.</p>
+      <div class="btn" id="portfolio-website-buttons">
+        <a href="https://github.com/juhimanishjain/medical-store-management-system" target="_blank"><button class="button">View on Github</button></a>
+      </div>
+      </div>
+    </div> 
+  </div>
+  <div class="footer-in-the-end">{% include "website/includes/footer.html" %}</div>
+{% endblock %}

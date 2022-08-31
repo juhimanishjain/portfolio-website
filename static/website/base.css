@@ -1,0 +1,20 @@
+:root{
+  --purple1: #E4E4FF;
+  --purple2:#9A9EF1;
+  --purple3:#5157DB;
+  --purple4:rgb(77, 0, 128);
+  --red1:rgba(255, 0, 0, 0.8);
+  --red2:#ff6666;
+  --red3:#cc0000;
+  --red4:#b30000;
+  --green1:#38B48A;
+  --green2:#0B8D60;
+  --yellow:#FFFF00;
+  --crayola-blue:#0066ff;
+  --white:#fff;
+  --black:#000;
+}
+
+:root{
+  --box-shadow:rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block static_files%}
+  <link rel="stylesheet" href="{% static "css/achievements.css" %}"/>
+{% endblock %}
+
+{% block content %}
+  {% include "website/includes/navigation_bar.html"%}
+  <div class="main-body">
+    <div class="achievements-listing">
+      <b><i><p class="emphasised-heading"> Over the years, my consistent hard work, obstinate determination, and my mentors' uninterrupted support have spurred my wings and guided me to follow my passion and chase my goals. My accolades 🏅in</p></i></b>
+      <div class="achievements">
+        <h3>Academics 🎓</h3>
+        <p>• Chancellor's Award Recipient ($64k scholarship) at UMass Amherst</p>
+        <p>• Dean's List at UMass Amherst</p>
+        <p>• SAT India Top Performer</p>
+      </div>
+      <div class="achievements">
+        <h3>Badminton 🏸 </h3>
+        <p>• Semi-Finalist at Khelo India National Badminton Tournament </p>
+        <p>• Gujarat Open State Badminton Doubles Tournament Winner (x2)</p>
+        <p>• Zonal Badminton Doubles Tournament Winner (x4)</p>
+        <p>• Zonal Badminton Tournament Runner-Up (x3)</p>
+      </div>
+      <div class="achievements">
+        <h3>Kathak <img src="{% static "images/icons/dance.png" %}" class="kathak-dance"></h3>
+        <p>• Visharad Purna in Kathak Classical Dance </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-in-the-end">{% include "website/includes/footer.html" %}</div>
+{%endblock%}

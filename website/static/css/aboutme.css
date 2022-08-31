@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* main container styling */
+.container-main{
+  background-color:var(--purple1);
+  width:100%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  display: flex;
+  min-height: calc(100vh - 120px);
+}
+
+/* image styling */
+.image-container{
+  width:50%;
+  position: relative;
+  margin-left: 24%;
+  margin-top: 5%;
+}
+
+.image-container img{
+  width: 100%;
+}
+
+.transition-image{
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5 ease;
+  border: 0.2rem solid var(--white);
+  border-radius: 50%;
+}
+
+.transition-image:hover{
+  opacity: 1;  
+}
+
+.main-image{
+  border: 0.2rem solid var(--white);
+  border-radius: 50%;
+}
+
+/* location tags styling */
+.location-tags-container{
+  text-align: center;
+  padding-top: 7%;
+}
+
+.emphasised {
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.2rem;
+  border: 0.3rem solid var(--white);
+  background-color: var(--white);
+  border-radius: 10%;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--purple4);
+}
+
+/* icons setting -- left side styling*/
+.icon{
+  width:25px;
+  margin-right: 0.2rem;
+}
+
+#us-location{
+  width: 14px;
+}
+
+.icons-for-minimized-screen{
+  display: none;
+}
+
+/* main page writing */
+h2{
+  margin-top: 4.1rem;
+}
+
+.home-page-writing{
+  margin: 1.5rem 0;
+  /* margin-right: 7rem; */
+  font-family: 'Lato', sans-serif;
+  font-size: 17.5px;
+
+}
+
+/* links settings */
+.links{
+  display: flex;
+  margin-top: 6.5rem;
+}
+
+.related-links-main-page{
+  text-decoration: none;
+  color: var(--black);
+  margin-right: 2rem;
+  font-size: 18px;
+}
+
+.related-links-main-page {
+  background-image: linear-gradient(
+    to right,
+    var(--purple3),
+    var(--purple3) 50%,
+    var(--black) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.related-links-main-page:before {
+  content: '';
+  background: var(--purple3);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.related-links-main-page:hover {
+ background-position: 0;
+}
+
+.related-links-main-page:hover::before {
+  width:100%;
+}
+
+.verticalLine {
+  border-left: solid var(--purple2);
+  width: 10px;
+  margin-right: 2rem;
+}
+
+/* scaling for different media devices */
+@media (min-width:1100px) {
+  .left-side-of-the-main-container{
+    max-width: 700px;
+  }
+
+  .right-side-of-the-main-container{
+    max-width: 740px;
+  }
+}
+
+@media all and (min-width:420px) and (max-width:1100px){
+  .container-main{
+    display: block;
+  }
+
+  .image-container{
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+  }
+
+  .right-side-of-the-main-container{
+    margin-top: 2rem;
+    justify-content: center;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2{
+    text-align: center;
+  }
+ 
+  .writings{
+    /* margin-left: 8rem; */
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+  } 
+
+  .home-page-writing{
+    font-size: 18px;
+  }
+
+  .icons-for-minimized-screen{
+    display: flex;
+    justify-content: center;
+  }
+
+  .minimized-screen-icons{
+    width:30px;
+    margin: 0rem 0.3rem;
+    margin-top: 1.5rem;
+  }
+
+  #resume-icon{
+    width:23px;
+  }
+
+  #linkedin-icon{
+    width:27px;
+  }
+
+  .location-tags-container{
+    padding-top: 5%;
+  }
+
+
+  /* links -- specific styling according to media content */
+  .links{
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .container-main{
+    display: block;
+  }
+
+  .image-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 26.5px;
+  }
+
+  .home-page-writing{
+    margin-right: 0;
+    margin: 1.5rem 4.4rem;
+    text-align: left;
+  }
+
+  .icons-for-minimized-screen{
+    display: flex;
+    justify-content: center;
+  }
+
+  .minimized-screen-icons{
+    width:2rem;
+    margin: 1rem 0.4rem;
+    margin-bottom: 0;
+  }
+
+  #resume-icon{
+    width:25px;
+  }
+
+  #linkedin-icon{
+    width:30px;
+  }
+
+  /* links -- specific styling according to media content */
+  .links{
+    display: none;
+  }
+}
+
+@media (max-width:300px) {
+  .icons-for-minimized-screen{
+    display: flex;
+    justify-content: center;
+  }
+
+  .minimized-screen-icons{
+    width:1.6rem;
+    margin: 1rem 0.4rem;
+    margin-bottom: 0;
+  }
+
+  #resume-icon{
+    width:20px;
+  }
+
+  #linkedin-icon{
+    width:25px;
+  }
+
+  .emphasised{
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-in-the-end{
+    font-size: 15px;
+  }
+}

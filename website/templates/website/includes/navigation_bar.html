@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+
+<!--CSS Files to be inserted-->
+{% block static_files%}
+  <link rel="stylesheet" href="{% static "css/nav_foot.css" %}"/>
+  <script src="{% static 'javascript/script.js' %}" defer></script>
+{%endblock%}
+
+<nav class="navbar">
+  <a href="about-me" class="clickable-image-back-to-about_me"><img src="{% static "images/favicon_32.png" %}" alt="icon-image" class="image-nav-bar"/></a>
+  <div class="link-set-when-screen-minimized">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+  </div>
+  <div class="navbar-links">
+    <ul>
+      <li><strong><a href="{% url "about-me"%}" class="active-links-header" >About Me</a></strong></li>
+      <li><strong><a href="{% url "projects"%}" class="links-header">Projects</a></strong></li>
+      <li><strong><a href="{% url "experiences"%}" class="links-header">Experience</a></strong></li>
+      {% comment %} <li><strong><a href="{% url "recognition"%}" class="links-header">Recognition</a></strong></li> {% endcomment %}
+      <li><strong><a href="{% url "achievements"%}" class="links-header">Achievements</a></strong></li>
+    </ul>
+  </div>
+</nav>

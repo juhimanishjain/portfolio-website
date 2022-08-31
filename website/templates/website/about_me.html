@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block static_files%}
+  <link rel="stylesheet" href="{% static "css/aboutme.css" %}"/>
+{% endblock %}
+
+{% block content%}
+  {% include "website/includes/navigation_bar.html"%} 
+  <div class="container-main">
+    <div class="left-side-of-the-main-container">
+      <div class="image-container">
+        <img src="{% static "images/main-image.jpg" %}" alt="image" class="container main-image"/></a>
+        <img src="{% static "images/transition-image-2.png" %}" alt="transition-image" class="container transition-image"/></a>
+      </div>
+      <div class="icons-for-minimized-screen">
+        <a href="https://drive.google.com/file/d/1i38cNofr8xmwPd8mkJQY8n2H_MsiuQhB/view?usp=sharing" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="minimized-screen-icons" id="resume-icon"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256z"/></svg></a>
+        <a href="https://www.linkedin.com/in/juhi-manish-jain/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="minimized-screen-icons" id="linkedin-icon"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+        <a href="https://github.com/juhimanishjain" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="minimized-screen-icons"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+        <a href="mailto: juhimanishja@umass.edu" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="minimized-screen-icons"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg></a>
+      </div>
+      <div class="location-tags-container">
+        <strong><a href="https://en.wikipedia.org/wiki/Amherst,_Massachusetts" class="emphasised us-location-tag" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon us-location" id="us-location"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>Amherst, MA</a></strong>
+        <strong><a href="https://www.umass.edu/" class="emphasised school-location-tag" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon school-graduation"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg>UMass Amherst</a></strong>
+      </div>
+    </div>
+    <div class="right-side-of-the-main-container">
+      <h2>Hi there 👋, I'm Juhi!</h2>
+      <div class="writings">
+        <p class="home-page-writing">I'm a Computer Science student and Chancellor's Award recipient at the University of Massachusetts Amherst, USA 🇺🇸 </p>
+        <p class="home-page-writing">A firm believer in Tech for Good, I have immersed myself in different fields of tech 👩🏻‍💻 - AI/ML, SWE, Android ; and aspire to address the crucial challenges society's facing by augmenting technology and helping build a more inclusive and harmonious world 🍀</p>
+        <p class="home-page-writing">As you walk through my profile 🦚, feel free to check my completed projects, past and current work experiences, and achievements!</p>
+      </div>
+      <div class="links">
+        <strong class="emphasised-links"><a href="https://drive.google.com/file/d/1i38cNofr8xmwPd8mkJQY8n2H_MsiuQhB/view?usp=sharing" id="resume" class="related-links-main-page" target="_blank"><p id="link">Resume</p></a></strong>
+        <div class="verticalLine"></div>
+        <strong class="emphasised-links"><a href="https://www.linkedin.com/in/juhi-manish-jain/" class="related-links-main-page" target="_blank">LinkedIn</a></strong>
+        <div class="verticalLine"></div>
+        <strong class="emphasised-links"><a href="https://github.com/juhimanishjain" class="related-links-main-page" target="_blank">Github</a></strong>
+        <div class="verticalLine"></div>
+        <strong class="emphasised-links" id="email-link"><a href="mailto: juhimanishja@umass.edu" class="related-links-main-page">Email</a></strong>
+      </div>
+    </div>
+  </div>
+  <div class="footer-in-the-end">{% include "website/includes/footer.html" %}</div>
+{% endblock %}

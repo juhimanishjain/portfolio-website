@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.main-content-experiences{
+  width:100%;
+  background-color:var(--purple1);
+  padding-bottom: 4%;
+}
+
+a{
+  cursor: pointer;
+}
+
+/* projects page ---- SECTION-1 */
+.section-1{
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  width:100%;
+}
+
+.project-listing{
+  width: 30rem;
+  background-color: #fff;
+  margin: 0 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.heart-prediction-model, .thinkme-android-application{
+  width:28rem;
+  height:18rem;
+  margin:1rem 1rem;
+}
+
+.professional-skills-in-a-border-box{
+  display: flex;
+}
+
+/* projects page ---- SECTION-2 */
+.section-2{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.neo4j-cypher-project, .personal-portfolio-website{
+  width:28rem;
+  height:18rem;
+  margin:1rem 1rem;
+}
+
+/* projects section -- general content styling */
+.project-heading{
+  margin: 0;
+  margin-left: 1.3rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.professional-skills-in-a-border-box{
+  margin: 0;
+  padding: 1.3rem 0;
+  justify-content: space-evenly;
+}
+
+.emphasised-skills{
+  border: 0.15rem solid #000;
+  border-radius: 10%;
+  padding: 0.25rem 0.4rem;
+}
+
+.description{
+  margin: 0;
+  margin: 0 1.4rem;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap:5%;
+}
+
+/* project-1 Heart Attack Prediction --- specific styling */
+#heart-attack-pred-heading{
+  color:#CC0000;
+}
+
+#heart-attack-pred-skills{
+  font-family: 'Lato', sans-serif;
+}
+
+#heart-attack-pred-links-button{
+  margin-top: 13.5%;
+}
+
+/* project-2 ThinkMe Android Application*/
+#thinkme-app-heading{
+  color: #004953;
+}
+
+#thinkme-app-skills{
+  margin-left: -1rem;
+}
+
+/* project-3 Project GOT*/
+#project-got-skills{
+  margin: 0 0.5rem;
+  margin-left: -0.5rem;
+}
+
+#project-got-button{
+  margin-top: 4%;
+}
+
+/* project-4 Portfolio Website */
+#portfolio-website-skills{
+  margin-left: -1.5rem;
+}
+
+#portfolio-website-heading{
+  color: #3366CC;
+}
+
+#portfolio-website-buttons{
+  margin-top: 10%;
+}
+
+/* icons styling */
+.icon{
+  width:55px;
+  height: 55px;
+}
+
+#flask, #django{
+  width:63px;
+  height: 63px;
+}
+
+#python{
+  width:48px;
+  height: 48px;
+}
+
+#js{
+  width:50px;
+  height: 50px;
+}
+
+#python-mysql{
+  width:100px;
+}
+
+/* buttons styling */
+.button{
+  padding:0.6rem 0.6rem;
+  border-radius: 10%;
+  font-size: 15px;
+  font-family: 'Lato', 'sans-serif';
+  font-weight: bold;
+  background-color: #8080ff;
+  border-color: #8080ff;
+  color: #fff;
+}
+
+@media (max-width: 420px){
+  .section-1, .section-2{
+    display: block;
+  }
+
+  .section-1{
+    padding-bottom: 0;
+  }
+
+  .project-listing{
+    width:20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heart-prediction-model, .thinkme-android-application, .neo4j-cypher-project, .personal-portfolio-website{
+    width:18rem;
+  }
+
+  .project-heading{
+    font-size: 16px;
+  }
+
+  #portfolio-website-skills{
+    margin-left: 0;
+  }
+
+  .icon{
+    width:40px;
+    height: 40px;
+  }
+
+  #flask, #django{
+    width: 50px;
+    height: 50px;
+  }
+
+  #mysql{
+    width: 50px;
+    height: 48px;
+  }
+
+  #python, #js{
+    width:35px;
+    height:35px;
+  }
+
+
+  #python-mysql{
+    width:66px;
+  }
+
+  .btn{
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 1100px){
+  .section-1, .section-2{
+    display: block;
+  }
+
+  .project-listing{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-1{
+    padding-bottom: 0;
+  }
+
+  .btn{
+    padding-bottom: 5%;
+  }
+
+}
+
+@media (max-width:300px){
+  .project-listing{
+    width:16rem;
+  }
+
+  .heart-prediction-model, .thinkme-android-application, .neo4j-cypher-project, .personal-portfolio-website{
+    width:14rem;
+  }
+
+  .project-heading{
+    font-size: 16px;
+  }
+
+  .icon{
+    width:35px;
+    height: 35px;
+  }
+
+  #flask, #django{
+    width: 45px;
+    height: 45px;
+  }
+
+  #python, #js{
+    width:30px;
+    height:30px;
+  }
+
+  #python-mysql{
+    width:48px;
+  }
+
+  #mysql{
+    width:35px;
+    height:35px;
+  }
+
+  #portfolio-website-skills{
+    margin-left: 0;
+  }
+
+  .description{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,21 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Image left to be inserted here-->
+    <link rel="icon" href="{% static "images/favicon_32.png" %}" />
+
+    <title class="main-title">Juhi Manish Jain</title>
+    
+    <link rel="stylesheet" href="{% static "base.css" %}">
+    <!--For injecting css files-->
+    {% block static_files %} {% endblock %} 
+  </head>
+  <body>
+    {% block content%} {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans&display=swap");
+
+/* Navigation Bar */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Sans Serif';
+  font-size: 17.5px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 5px 5px;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin: 5px 5px;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color:#808080;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links a:hover{
+  color: #303030;
+}
+
+.toggle-button{
+  position: absolute;
+  top:1.5rem;
+  right:1rem;
+  display: none;
+  flex-direction: column;
+  width: 30px;
+  height: 10px;
+  width: 2.3em;
+  height: 2.2em;
+  padding: 0.3em 0;
+  border: solid rgba(0,0,0,.1);
+  border-radius: 15%;
+}
+
+.bar{
+  background-color:#808080;;
+  border: 1px solid rgba(0,0,0,.5);
+  cursor: pointer;
+  border-radius: 10%;
+  width: 1.5em;
+  margin: 0.2rem 0.35rem;
+}
+
+@media (max-width:600px){
+  .toggle-button{
+    display: flex;
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    width:100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li{
+    text-align: center;
+  }
+
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+}
+}
+
+
+/* NAVIGATION BAR -- IMAGE */
+.image-nav-bar {
+  padding: 1rem;
+  margin-right: 13px;
+}
+
+/* Footer */
+.footer {
+  /* text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background-color: #fff;
+  display: inline block;
+  font-family: "Lato", sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.emphasised-copyright {
+  text-align: center;
+  font-size: 16px;
+  color:#808080;
+}
+
+@media (max-width:300px) {
+  .emphasised-copyright, .copyright-website {
+    text-align: center;
+    font-size: 13px;
+    color:#808080;
+  }
+
+}
+/* .footer-follow-websites {
+  margin-right: 50px;
+}
+
+.connect-with-me {
+  margin-left: 3px;
+}
+
+.instagram-icon {
+  width: 20px;
+  margin: 5px 10px;
+  margin-top: 7px;
+}
+
+.youtube-icon {
+  width: 25px;
+  margin: 5px 10px;
+  margin-right: 3px;
+}
+
+.pinterest-icon {
+  width: 21px;
+  margin: 5px 14px;
+} */

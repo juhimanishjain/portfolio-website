@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-content-experiences{
+  background-color:var(--purple1);
+  width: 100%;
+  min-height: calc(100vh - 120px);
+}
+
+.content-experiences{
+  display: flex;
+  justify-content: center;
+  padding: 6%;
+  gap:10%;
+}
+
+.experience-listing-1{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* styling experience --> in the box*/
+.experience-listing{
+  height: 29rem;
+  width: 33rem;
+  background-color:var(--white);
+  box-shadow: var(--box-shadow) 0px 3px 8px;
+}
+
+.additional-experiences-listing{
+  height: 36rem;
+  width: 33rem;
+  justify-content: center;
+  background-color: var(--white);
+  margin-bottom: 3%;
+  box-shadow: var(--box-shadow) 0px 3px 8px;
+}
+
+
+/* experience section -- images styling */
+.FreshCICS-image, .IALS-image, .RHA-image{
+  width: 31rem;
+  height: 15rem;
+  margin: 1rem 1rem;
+}
+
+.RHA-image{
+  width:31rem;
+  height:23rem;
+  margin: 1rem 1rem;
+}
+
+
+/* experience section --- title styling */
+.IALS-title, .FreshCICS-title, .RHA-title{
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  margin: 0 1rem;
+}
+
+/* experience section -- position + title styling*/
+.FreshCICS-position-title, .IALS-position-title, .RHA-position-title{
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  margin: 0.5rem 1rem;
+  gap: 0.7%;
+}
+
+/* experience section -- description styling */
+.FreshCICS-description, .IALS-description, .RHA-description{
+  margin: 1.2rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+
+/* experience section -- color styling */
+.IALS-title{
+  color: var(--red3);
+}
+
+.IALS-position-title{
+  color: var(--red2);
+}
+
+.IALS-highlight-link{
+  text-decoration: none;
+  color:var(--red2);
+}
+
+.IALS-highlight-link:hover{
+  color:var(--red3);
+  text-decoration: underline;
+}
+
+.FreshCICS-title{
+  color:var(--green2);
+}
+
+.FreshCICS-position-title{
+  color:var(--green1); 
+}
+
+.FreshCICS-highlight-link{
+  color:var(--green1);
+  text-decoration: none;
+}
+
+.FreshCICS-highlight-link:hover{
+  color:var(--green2);
+  text-decoration: underline;
+}
+
+.RHA-title{
+  color:var(--red4);
+}
+
+.RHA-position-title{
+  color: var(--red1);
+}
+
+.RHA-highlight-link{
+  color: var(--red1);
+  text-decoration: none;
+}
+
+.RHA-highlight-link:hover{
+  color:var(--red4);
+  text-decoration: underline;
+}
+
+@media (max-width: 570px) {
+  .content-experiences{
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .experience-listing, .additional-experiences-listing{
+    width:20rem;
+    height:25.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .FreshCICS-image, .IALS-image, .RHA-image{
+    width: 18rem;
+    height: 13rem;
+    margin: 1rem 1rem;
+  }
+
+  .IALS-title, .FreshCICS-title, .RHA-title{
+    font-size: 15px;
+  }
+
+  .IALS-position-title, .IALS-description, .FreshCICS-description, 
+  .FreshCICS-position-title, .RHA-description, .RHA-position-title{
+    font-size: 12.5px;
+  }
+
+}
+
+@media (max-width: 1150px){
+  .content-experiences{
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .experience-listing, .additional-experiences-listing{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:300px){
+  .experience-listing, .additional-experiences-listing{
+    width:15rem;
+    height:26rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .FreshCICS-image, .IALS-image, .RHA-image{
+    width: 13rem;
+    height: 13rem;
+    margin: 1rem 1rem;
+  }
+
+  .IALS-title, .FreshCICS-title, .RHA-title{
+    font-size: 13px;
+  }
+
+  .IALS-position-title, .IALS-description, .FreshCICS-description, 
+  .FreshCICS-position-title, .RHA-description, .RHA-position-title{
+    font-size: 10px;
+  }
+
+  .IALS-position-title{
+    font-size: 9.1px;
+  }
+}
